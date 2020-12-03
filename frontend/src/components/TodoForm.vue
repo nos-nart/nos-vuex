@@ -1,5 +1,5 @@
 <template>
-  <el-form ref="form" :inline="true" :rules="rules" @submit.native.prevent="doSubmit" :model="todo">
+  <el-form ref="form" :inline="true" :rules="rules" @submit.native.prevent="submit" :model="todo">
     <el-form-item label="Todo" prop="text" :required="true">
       <el-input v-model="todo.text"></el-input>
     </el-form-item>
@@ -41,7 +41,7 @@ export default {
       doCreate: "todo/doCreate"
     }),
 
-    async doSubmit() {
+    async submit() {
       try {
         await this.$refs.form.validate();
       } catch (error) {
