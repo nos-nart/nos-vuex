@@ -10,7 +10,7 @@
   "dependencies": {
     "core-js": "^3.8.1",
     "axios": "^0.21.1",
-    "element-ui": "^2.14.1",
+    "element-ui": "^2.15.0",
     "vue": "^2.6.11",
     "vuex": "^3.6.0"
   },
